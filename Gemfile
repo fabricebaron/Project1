@@ -7,6 +7,10 @@ ruby '2.5.5'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
 # Use sqlite3 as the database for Active Record
 
+gem 'jquery-rails'
+
+gem 'bootstrap-sass', '~> 3.4.1'
+
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
