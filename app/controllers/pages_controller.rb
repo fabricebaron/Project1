@@ -6,4 +6,6 @@ class PagesController < ApplicationController
 	def photo
 	
 	end
+
+	
 end
