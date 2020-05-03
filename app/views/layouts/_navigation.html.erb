@@ -1,9 +1,8 @@
 <nav class="navbar navbar-transparent">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-     <a class="navbar-header" href="#" id="panda">
-                <img src="https://upload.wikimedia.org/wikipedia/fr/1/11/Panda3D_Logo.png" height="45" width="45" >
-     </a>
+    <!-- Brand and toggle get grouped for better mobile display -->     
+     <%= link_to image_tag("https://upload.wikimedia.org/wikipedia/fr/1/11/Panda3D_Logo.png", height:"45", width:"45"), root_path, class:"navbar-header", id:"panda" %>
+                
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -11,19 +10,25 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#" style="font-weight: 850">SUSHI PANDA</a> 
+       
+      <%= link_to "SUSHI PANDA", root_path, class:"navbar-brand", style:"font-weight: 850" %>
+
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="nav navbar-nav navbar-right">
       
-     
-      	<a class="navbar-brand " href="#" style="font-weight: 850" >Carte</a>
+      <%= link_to "Menu", menu_path, class:"navbar-brand", style:"font-weight: 850" %>
+
+      <%= link_to "A la carte", carte_path, class:"navbar-brand", style:"font-weight: 850" %>
+
+      <%= link_to "Nous rejoindre", joined_path, class:"navbar-brand", style:"font-weight: 850" %>
+
+      <%= link_to "Me connecter/S'inscrire", connection_path, class:"navbar-brand", style:"font-weight: 850" %>
+
+      <%= link_to "Panier", panier_path, class:"navbar-brand", style:"font-weight: 850" %>
+      
 	    
-      	<a class="navbar-brand" href="#" style="font-weight: 850">Nous rejoindre</a>
-	    
-	    <a class="navbar-brand" href="#" style="font-weight: 850">Me connecter/S'inscrire</a>
-	    
-	    <a class="navbar-brand" href="#" style="font-weight: 850">Panier</a>
+      
 	    
       </div>
     </div><!-- /.navbar-collapse -->

@@ -3,7 +3,23 @@ class PagesController < ApplicationController
 	
 	end
 	
-	def photo
+	def menu
+	
+	end
+
+	def carte
+	
+	end
+
+	def joined
+	
+	end
+
+	def connection
+	
+	end
+
+	def panier
 	
 	end
 
