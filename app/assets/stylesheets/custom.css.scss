@@ -300,7 +300,7 @@ width:100%;
 
 padding-top:50px;
 
-height:250px;
+height:225px;
 
 }
 
@@ -313,45 +313,161 @@ height:250px;
 }
 
 #menua{
-	margin-left: 120px;
+	margin-left: 115px;
   
 }
 
 #menub{
-	margin-left: 120px;
+	margin-left: 115px;
      
 }
 
 #menuc{
-	margin-left: 120px;
+	margin-left: 115px;
      
 }
 
 #menud{
-	margin-left: 120px;
+	margin-left: 115px;
      
 }
 
 #menue{
-	margin-left: 120px;
+	margin-left: 115px;
     
 }
 
 #menuf{
-	margin-left: 120px;
+	margin-left: 115px;
     
 }
 
 #blockmenu{
 	margin-top: 100px;
+	animation-duration: 2s;
+  	animation-name: slidein;
 }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 
 #blockmenu2{
 	margin-top: 100px;
 	margin-bottom: 100px;
+	animation-duration: 2s;
+  animation-name: slidein;
 }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
 
 .thumbnail{
 	background-color: rgba(255,255,255, 0.5);
 	border-color: rgba(255,255,255, 0.5);
+
 }
+
+#carte1{
+	margin-left: 115px;
+  
+}
+
+#carte2{
+	margin-left: 115px;
+     
+}
+
+#carte3{
+	margin-left: 115px;
+     
+}
+
+#carte4{
+	margin-left: 115px;
+     
+}
+
+#carte5{
+	margin-left: 115px;
+    
+}
+
+#carte6{
+	margin-left: 115px;
+    
+}
+
+#blockcarte{
+	margin-top: 100px;
+	animation-duration: 2s;
+  	animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+#blockcarte2{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	animation-duration: 2s;
+  	animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+
+
+.card-content{
+	margin-top: 50px;
+}
+
+.card-content p{
+	color: #FFFFFF;
+}
+
+.card-content h3 {
+	color: #FFFFFF;
+}
+

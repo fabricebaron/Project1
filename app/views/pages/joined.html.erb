@@ -1,0 +1,50 @@
+
+
+<div class="card z-depth-3">
+	<div class="card-content">
+		<h3>Adresse et horaire:</h3>
+		<p>Heure d'ouverture</p>
+		<p>Du Mardi au dimanche</p>
+		<p>11h à 22h30</p>
+		<p>L'adresse du restaurant:</p>
+		<p>135, boulevard montparnasse, 75006, Paris</p>
+		<p>Ligne métro 6 : Vavin</p>
+		<p>Ligne Rer B : Port Royal</p>
+		
+		<div id="map"></div>
+	</div>
+</div>
+
+<style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 40%;  /* The width is the width of the web page */
+        margin-left: auto;
+    	margin-right: auto;
+    	margin-top: 30px;
+    	margin-bottom: 50px;
+       }
+    </style>
+  
+    
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 48.841245, lng: 2.332217};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp0dt-GknKFG2uo4F9C5kFbCCYlDswnIk&callback=initMap">
+    </script>
