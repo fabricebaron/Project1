@@ -6,6 +6,8 @@
 }
 
 
+
+
 .navbar-nav li a{
   color: white ;
 }
@@ -28,7 +30,9 @@
 .navbar {
     background:transparent;
     margin-top: 15px;
+
 }
+
 
 
 .jumbotron {
@@ -37,11 +41,26 @@
 	background: none;
 	
 	
-	margin-top: 50px;
+	margin-top: 200px;
 	text-shadow: 2px 0 0 #353B3A, 0 2px 0 #353B3A, 0 -2px 0 #353B3A, -2px 0 0 #353B3A, 2px 2px 0 #353B3A, 2px -2px 0 #353B3A, -2px 2px 0 #353B3A, -2px -2px 0 #353B3A;
+	animation-duration: 2s;
+  	animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 
 	
-}
+
 
 .jumbotron h1 {
 	color: white;
@@ -81,6 +100,8 @@ body {
 	font: bold 16px sans-serif;
 	padding: 55px 50px;
 }
+
+
 
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
@@ -211,7 +232,7 @@ body {
 }
 
 .footer-distributed .footer-icons{
-	margin-top: 25px;
+	margin-top: 10px;
 }
 
 .footer-distributed .footer-icons a{

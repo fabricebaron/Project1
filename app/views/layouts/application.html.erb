@@ -11,9 +11,10 @@
 
   <body>
     <%= render 'layouts/navigation' %>
+    <div><%= flash[:info] %></div>
     <%= yield %>
-    
     <%= render 'layouts/footer' %>
+   
   </body>
 
 
