@@ -91,6 +91,7 @@ body {
 
 
 .footer-distributed{
+	position: fixed;
 	background: #666;
 	margin-bottom: 0px;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -251,6 +252,8 @@ body {
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
+
+
 
 /* If you don't want the footer to be responsive, remove these media queries */
 

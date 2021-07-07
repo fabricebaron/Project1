@@ -1,5 +1,13 @@
 class UsersController < ApplicationController
 
+  def index
+    if @current_user.try(:role) != "admin"
+      flash[:error] = "Accès interdit"
+      return redirect_to request.referrer || "/"
+    end
+    @users = User.all
+  end
+
   def home
   	if session[:user_id]
       @current_user = User.find(session[:user_id])
@@ -14,7 +22,7 @@ class UsersController < ApplicationController
   def logout
     session[:user_id] = nil
     flash[:info] = "Vous êtes maintenant déconnecté."
-    redirect_to "/users/home"
+    redirect_to "/"
   end
 
   def check
@@ -22,11 +30,11 @@ class UsersController < ApplicationController
     if @current_user
       session[:user_id] = @current_user.id
       flash[:info] = "Vous êtes maintenant connecté"
-      redirect_to "/users/home"
+      redirect_to "/"
     else
       session[:user_id] = nil
       flash[:info] = "Échec de la connexion"
-      redirect_to "/users/login"
+      redirect_to "login"
     end
   end
 end
