@@ -73,7 +73,7 @@
 
 body {
 	background : #ccc;
-	background-image : url('widget');
+	background-image : asset_url('widget.jpg');
 	background-attachment: fixed;
 	background-size:cover;
     margin:0;
